@@ -43,6 +43,7 @@ III. Module Notes:
         - Middleware Demonstration: 
             +, See 3rd Commit for code and 
             full explanation
+        - How Middleware work: 
         
 
 IV. Other Notes: 
