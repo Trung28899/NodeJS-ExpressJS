@@ -1,5 +1,7 @@
 I. Used Tools: 
 
+    - $ npm install --save express
+
 II. Core Concepts: 
     1. What is Express: 
         - Framework: Helper functions, tools & rules 
@@ -16,8 +18,32 @@ II. Core Concepts:
             +, Adonis.js, Koa, Sails.js, etc...
         => Express is the most popular. 
         Big Pros of Express: Very flexible
+    
+    2. Middleware: 
+        - Middleware means that an incoming request is
+        automatically handled through a bunch of function 
+        by ExpressJS
+        - Using Middleware, you can handle request in 
+        different pieces of code and don't have to 
+        put all the hanling in same function. 
+
+        => Middleware is the core concept of Express
+
+        - See part 2 in III to understand how
+        Middleware works in code
 
 III. Module Notes:
+    1. Setting up express: 
+        - 2nd Commit
+        - Install express: 
+            $ npm install --save express
+        - Set up code: app.js
+    
+    2. Middleware: 
+        - Middleware Demonstration: 
+            +, See 3rd Commit for code and 
+            full explanation
+        
 
 IV. Other Notes: 
 
