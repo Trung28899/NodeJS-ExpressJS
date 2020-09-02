@@ -34,7 +34,7 @@ II. Core Concepts:
 
 III. Module Notes:
     1. Setting up express: 
-        - 2nd Commit
+        - 1st Commit
         - Install express: 
             $ npm install --save express
         - Set up code: app.js
@@ -44,6 +44,8 @@ III. Module Notes:
             +, See 3rd Commit for code and 
             full explanation
         - How Middleware work: 
+            +, See 4th Commit for code and 
+            full explanation
         
 
 IV. Other Notes: 
