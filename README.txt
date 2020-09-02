@@ -21,8 +21,12 @@ II. Core Concepts:
     
     2. Middleware: 
         - Middleware means that an incoming request is
-        automatically handled through a bunch of function 
-        by ExpressJS
+        automatically funneled through a bunch of function 
+        by ExpressJS 
+        
+        > this allow you can put code in multiple
+        pieces when it comes to handling requests 
+        
         - Using Middleware, you can handle request in 
         different pieces of code and don't have to 
         put all the hanling in same function. 
@@ -46,6 +50,8 @@ III. Module Notes:
         - How Middleware work: 
             +, See 4th Commit for code and 
             full explanation
+            See this link to dig deeper into expressjs
+            https://github.com/expressjs/express
         
 
 IV. Other Notes: 

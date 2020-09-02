@@ -22,6 +22,10 @@ app.use((req, res, next) => {
   next();
 });
 
-const server = http.createServer(app);
+app.listen(3000);
 
-server.listen(3000);
+/*
+    Alternative way of listening to port 3000: 
+    const server = http.createServer(app);
+    server.listen(3000);
+*/
