@@ -52,6 +52,11 @@ III. Module Notes:
             full explanation
             See this link to dig deeper into expressjs
             https://github.com/expressjs/express
+            https://expressjs.com/ > API Reference 
+            to see all the methods
+        
+    3. Handling different routes: 
+        - See 6th Commit
         
 
 IV. Other Notes: 

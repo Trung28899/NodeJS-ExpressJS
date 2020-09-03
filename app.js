@@ -4,22 +4,32 @@ const express = require("express");
 
 const app = express();
 
-app.use((req, res, next) => {
-  console.log("In Middleware");
+app.use("/", (req, res, next) => {
+  console.log("This will always run in any routes");
   next();
 });
 
-app.use((req, res, next) => {
-  console.log("In Another Middleware");
-  /*
-    send() allow us to send a response
+/*
+    We don't run next() here so it only render
+    correct content for '/add-product'
 
-    NOTICE: we don't need to call
-    next() in the last middleware,
-    it wont do anything
-  */
+*/
+app.use("/add-product", (req, res, next) => {
+  console.log("In '/add-product' Middleware");
+  res.send("<h1>This The Add Product Page</h1>");
+});
+
+/*
+    Handle this for route that start with '/'
+    Therefore, if we add any route before this, 
+    the page will be returned differently
+
+    Anything else will be rendered the same as 
+    '/'
+*/
+app.use("/", (req, res, next) => {
+  console.log("In '/' Middleware");
   res.send("<h1>Hello Dawg</h1>");
-  next();
 });
 
 app.listen(3000);
