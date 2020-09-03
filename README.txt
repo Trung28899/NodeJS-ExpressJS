@@ -73,6 +73,28 @@ III. Module Notes:
         requests only
         +, app.use(): can be used for both GET and 
         POST
+    
+    5. Using Express Router:  
+        - Code in 11st Commit
+        - See ./routes/admin.js and ./routes/shop.js
+        to see how to set up Express Router
+        - See app.js for how to combined different routes 
+
+    6. Adding 404 Page and Filtering Paths: 
+        a. Adding 404 Page: 
+            - 12nd Commit
+            - go to app.js to see
+        b. Filetering Paths: 
+            - 12nd Commit 
+            - Go to app.js to see 
+            - Go to ./routes/admin.js to 
+            see different Paths
+
+    7. Serving HTML page and returning 404 page: 
+        a. Serving Html page: 
+            - 13rd Commit
+            - See /routes/shop.js 
+            for explanation
 
 IV. Other Notes: 
 
