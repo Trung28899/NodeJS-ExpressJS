@@ -1,6 +1,7 @@
 I. Used Tools: 
 
     - $ npm install --save express
+    - $ npm install --save body-parser
 
 II. Core Concepts: 
     1. What is Express: 
@@ -57,7 +58,12 @@ III. Module Notes:
         
     3. Handling different routes: 
         - See 6th or 7th Commit
-        (They are the same)        
+        (They are the same) 
+
+    4. Parsing Incoming Request with Express:
+        - run: 
+            $ npm install --save body-parser
+        - See Code in 9th Commit
 
 IV. Other Notes: 
 

@@ -1,45 +1,39 @@
-const http = require("http");
-
 const express = require("express");
+// Importing bodyParser
+const bodyParser = require("body-parser");
 
 const app = express();
 
 /*
-    In here we run next() because we want this middleware
-    to be executed for all routes
-*/
-app.use("/", (req, res, next) => {
-  console.log("This will always run in any routes");
-  next();
-});
+  Required Middleware, use exactly the same in 
+  any case
 
-/*
-    We don't run next() here so it only render
-    correct content for '/add-product'
-
+  NOTE THAT: Body parser only parse string in the 
+  incoming requests, For other type of requests, 
+  we have to use different packages
 */
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use("/add-product", (req, res, next) => {
-  console.log("In '/add-product' Middleware");
-  res.send("<h1>This The Add Product Page</h1>");
+  res.send(
+    "<form action='/product' method='POST'><input type='text' name='tittle'></input><button type='submit'>Add Product</button></form>"
+  );
 });
 
-/*
-    Handle this for route that start with '/'
-    Therefore, if we add any route before this, 
-    the page will be returned differently
+app.use("/product", (req, res, next) => {
+  /*
+    Getting the body parsed
 
-    Anything else will be rendered the same as 
-    '/'
-*/
+    GUIDE: Go to http://localhost:3000/add-product
+    > send some text > go back to terminal to see
+    result
+  */
+  console.log(req.body);
+  res.redirect("/");
+});
+
 app.use("/", (req, res, next) => {
-  console.log("In '/' Middleware");
   res.send("<h1>Hello Dawg</h1>");
 });
 
 app.listen(3000);
-
-/*
-    Alternative way of listening to port 3000: 
-    const server = http.createServer(app);
-    server.listen(3000);
-*/
