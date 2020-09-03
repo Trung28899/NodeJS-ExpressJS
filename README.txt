@@ -65,6 +65,15 @@ III. Module Notes:
             $ npm install --save body-parser
         - See Code in 9th Commit
 
+        NOTE: app.use(), app.get(), app.post()
+        these are the same thing excepts: 
+        +, app.get(): is the middleware for GET 
+        requests only
+        +, app.post(): is the middleware for post
+        requests only
+        +, app.use(): can be used for both GET and 
+        POST
+
 IV. Other Notes: 
 
 Module includes: 
