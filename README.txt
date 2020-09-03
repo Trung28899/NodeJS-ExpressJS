@@ -93,8 +93,14 @@ III. Module Notes:
     7. Serving HTML page and returning 404 page: 
         a. Serving Html page: 
             - 13rd Commit
+            - Adding views file that 
+            contains all html Files
             - See /routes/shop.js 
             for explanation
+        
+        b. Returning 404 page:
+            - 14th Commit
+            - See app.js
 
 IV. Other Notes: 
 
