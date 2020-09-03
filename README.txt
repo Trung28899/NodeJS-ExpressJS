@@ -56,8 +56,8 @@ III. Module Notes:
             to see all the methods
         
     3. Handling different routes: 
-        - See 7th Commit
-        
+        - See 6th or 7th Commit
+        (They are the same)        
 
 IV. Other Notes: 
 
