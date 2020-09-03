@@ -4,6 +4,10 @@ const express = require("express");
 
 const app = express();
 
+/*
+    In here we run next() because we want this middleware
+    to be executed for all routes
+*/
 app.use("/", (req, res, next) => {
   console.log("This will always run in any routes");
   next();
