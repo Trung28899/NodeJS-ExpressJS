@@ -90,7 +90,10 @@ III. Module Notes:
             - Go to ./routes/admin.js to 
             see different Paths
 
-    7. Serving HTML page and returning 404 page: 
+    7. Serving HTML page, Returning 404 page and 
+       and Using a Helper Function for Navigation
+       (Getting the root directory of the application):  
+
         a. Serving Html page: 
             - 13rd Commit
             - Adding views file that 
@@ -101,6 +104,13 @@ III. Module Notes:
         b. Returning 404 page:
             - 14th Commit
             - See app.js
+
+        c. Returning Helper Function for Navigation:
+            (Getting the root directory of the application) 
+            - 15th Commit
+            - Go to helper/path.js to see how to set up
+            - Go to routes/shop.js and routes/admin.js to see
+            how to import and use it
 
 IV. Other Notes: 
 
