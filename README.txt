@@ -85,7 +85,7 @@ III. Module Notes:
         +, app.use(): can be used for both GET and 
         POST
     
-    5. Using Express Router:  
+    5. Using Express Router:
         - Code in 11st Commit
         - See ./routes/admin.js and ./routes/shop.js
         to see how to set up Express Router
@@ -106,19 +106,19 @@ III. Module Notes:
        (Getting the root directory of the application):  
 
         a. Serving Html page: 
-            - 13rd Commit
+            - 11st Commit
             - Adding views file that 
             contains all html Files
             - See /routes/shop.js 
             for explanation
         
         b. Returning 404 page:
-            - 14th Commit
+            - 12th Commit
             - See app.js
 
         c. Returning Helper Function for Navigation:
             (Getting the root directory of the application) 
-            - 16th Commit
+            - 14th Commit
             - Go to helper/path.js to see how to set up
             - Go to routes/shop.js and routes/admin.js to see
             how to import and use it
@@ -126,7 +126,7 @@ III. Module Notes:
     8. Serving Files Statically: 
         (Granting Files public readability 
          without Routing)
-        - Code in 18th Commit
+        - Code in 16th Commit
         - See app.js to see how to grant public readability
         to ./public file
         - See files in ./views to understand how to use 
