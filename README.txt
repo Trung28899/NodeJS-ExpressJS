@@ -126,7 +126,7 @@ III. Module Notes:
     8. Serving Files Statically: 
         (Granting Files public readability 
          without Routing)
-        - Code in 16th Commit
+        - Code in 18th Commit
         - See app.js to see how to grant public readability
         to ./public file
         - See files in ./views to understand how to use 
