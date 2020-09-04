@@ -37,6 +37,17 @@ II. Core Concepts:
         - See part 2 in III to understand how
         Middleware works in code
 
+    3. Serving Files Statically: 
+        - Problem: Normally when we type for example: 
+        localhost:3000/views/shop.html > we'll get
+        page not found. 
+        
+        - This is because NodeJs don't allow client side 
+        to access file system. 
+
+        - Serving Files Statically means we grant the public
+        readability for some certain files. 
+
 III. Module Notes:
     1. Setting up express: 
         - 1st Commit
@@ -111,6 +122,19 @@ III. Module Notes:
             - Go to helper/path.js to see how to set up
             - Go to routes/shop.js and routes/admin.js to see
             how to import and use it
+    
+    8. Serving Files Statically: 
+        (Granting Files public readability 
+         without Routing)
+        - Code in 18th Commit
+        - See app.js to see how to grant public readability
+        to ./public file
+        - See files in ./views to understand how to use 
+        Files that are served Statically (css files)
+
+        => See Part II. 3 to understand the concept of
+        Serving Files Statically
+
 
 IV. Other Notes: 
 
