@@ -9,6 +9,13 @@ const shopRoutes = require("./routes/shop");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+/*
+  Setting up public folder to server files 
+  statically, you can now serve any file 
+  in this public folder statically 
+*/
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
