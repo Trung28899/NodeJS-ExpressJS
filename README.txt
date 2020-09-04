@@ -107,7 +107,7 @@ III. Module Notes:
 
         c. Returning Helper Function for Navigation:
             (Getting the root directory of the application) 
-            - 15th Commit
+            - 16th Commit
             - Go to helper/path.js to see how to set up
             - Go to routes/shop.js and routes/admin.js to see
             how to import and use it

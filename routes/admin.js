@@ -4,17 +4,15 @@ const rootDir = require("../helper/path");
 
 const router = express.Router();
 
-// Actually get to /admin/add-product
+// /admin/add-product => GET
 router.get("/add-product", (req, res, next) => {
   res.sendFile(path.join(rootDir, "views", "add-product.html"));
 });
 
-// Actually get to /admin/product
-router.use("/product", (req, res, next) => {
+// /admin/add-product => POST
+router.post("/add-product", (req, res, next) => {
   console.log(req.body);
   res.redirect("/");
 });
-
-console.log(rootDir);
 
 module.exports = router;
